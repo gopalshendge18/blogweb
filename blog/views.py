@@ -31,5 +31,5 @@ def category(request, url):
     posts = Post.objects.filter(cat=cat)
     return render(request, "category.html", {'cat': cat, 'posts': posts})
 
-def about(request, url):
+def about(request):
     return render(request, "about.html")
