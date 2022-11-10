@@ -18,7 +18,7 @@ from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
 from django.views.static import serve
-from django.urls import include, re_path
+from django.urls import re_path as url
 urlpatterns = [
                   path('admin/', admin.site.urls),
                   path('', include('blog.urls')),
